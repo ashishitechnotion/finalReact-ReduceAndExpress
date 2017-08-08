@@ -1,0 +1,23 @@
+axios.get('http://jsonplaceholder.typicode.com/users/1')
+//axios.get('https://majesticerp-mymapi.herokuapp.com/get_all_org_user_list')
+ .then(function (response) {
+   self.setState({data: response.data})
+   console.log({data: response.data});
+  // self.setState({getAddress: response.data.address})
+ })
+.catch(function (error) {
+   console.log(error);
+});
+
+
+
+// axios.get('http://jsonplaceholder.typicode.com/users/1')
+// //axios.get('https://majesticerp-mymapi.herokuapp.com/get_all_org_user_list')
+//  .then(function (response) {
+//    self.setState({data: response.data})
+//    console.log({data: response.data});
+//   // self.setState({getAddress: response.data.address})
+//  })
+// .catch(function (error) {
+//    console.log(error);
+// });
