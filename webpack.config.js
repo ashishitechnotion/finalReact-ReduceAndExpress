@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-var BUILD_DIR = path.resolve(__dirname, 'published');
+ var BUILD_DIR = path.resolve(__dirname, 'published');
 var porte = process.env.PORT || 7373;
 var config = {
    entry: './main.js',
@@ -8,7 +8,7 @@ var config = {
 	
    output: {
       path:BUILD_DIR,
-      filename: 'bundle.js',
+      filename: 'index.js',
    },
 	
    devServer: {
