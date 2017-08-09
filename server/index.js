@@ -4,7 +4,7 @@ const cors=require('cors');
 const app=express();
 const router = require('./router');
 
-var port=3000;
+var port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());

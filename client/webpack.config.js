@@ -1,15 +1,19 @@
+var webpack = require('webpack');
+var path = require('path');
+var BUILD_DIR = path.resolve(__dirname, 'published');
+var porte = process.env.PORT || 7373;
 var config = {
    entry: './main.js',
    
 	
    output: {
-      path:'/output',
-      filename: 'index.js',
+      path:BUILD_DIR,
+      filename: 'bundle.js',
    },
 	
    devServer: {
       inline: true,
-      port: 7373,
+      port: porte,
 	  headers: { "Access-Control-Allow-Origin": "*" }
    },
 	
